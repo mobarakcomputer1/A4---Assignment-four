@@ -1,0 +1,308 @@
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins";
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    padding: 20px;
+    color: rgb(207, 207, 207);
+}
+div{
+     
+    border-radius: 10px 20px;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%  1fr;
+    grid-template-rows: 15% 18% 23%  7% calc(37% -10px);
+    gap: 10px;
+    grid-template-areas: 
+     "card-1 card-1 card-3 card-4"
+     "card-1 card-1 card-3 card-7 "
+     "card-5  card-6 card-3  card-7 "
+     "card-5  card-8 card-9 card-9 "
+     "card-5  card-10 card-9 card-9"
+    
+    ;
+}
+.card-1{
+    grid-area: card-1;
+    background: #101011;
+    display: flex;
+    gap: 5px;
+    padding-left: 5px;
+    
+}
+.card-1 div{
+    
+    background-position: center;
+}
+.card-1 .img{
+    align-self: center;
+    height: 90%;
+    background-image: url(https://lh5.googleusercontent.com/oyAX4KBqmtzD-1i9X7bTIi1-fIgrmQXQB_hhSmIz4OY08OYAym3SzRhWtussSunASexX1JLBOglU27Oc6XY7vhlybcM4BMK5oNfpvQXMR1L91YmbD5fedvOR_M3SGnt82M9YtPKgq3isV2uZFe7UGEipHPtGGr_KUyLwrEemzcw6uDOj1BIaSAjBXg);
+    background-size: cover;
+    width: 40%;
+
+}
+.card-1 .text{
+    height: 100%;
+    width: 60%;
+    background-image: url(Neon\ More\ Cases\ Flower\ Emblem.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.card-2{
+    grid-area: card-2;
+    background: yellowgreen;
+
+} 
+
+.card-3{
+    grid-area: card-3;
+    background: #161519;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-3 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.card-3 li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.card-3 li:hover{ 
+    box-shadow: 0 0px 10px rgb(51, 51, 51);
+    transition: .1s;
+    scale: 1.05;
+
+
+}
+ 
+.mail{
+    position: relative;
+    top: -20px;
+    display: flex;
+    align-items: center !important; 
+   
+    
+}
+.card-3 i{
+ 
+     align-self: center;
+}
+ 
+
+.card-4{
+    padding: 20px;
+    grid-area: card-4;
+    background:linear-gradient(to left,#7646cf,#b269dd);
+    display: flex;
+    gap: 10px;
+    
+}
+ 
+.card-4 i{
+    font-size: 2rem;
+}
+.card-4 p{
+    display: flex;
+    gap: 6px;
+}
+.card-4  hr{
+    height: 30px;
+    align-self: center;
+}
+.card-4 span{
+    display: block;
+    font-size: small;
+}
+.card-5{
+    grid-area: card-5;
+     border: 2px solid rgb(205, 195, 50);
+     display: flex;
+      justify-content: center;
+     align-items: center;
+}
+.card-5 div{
+    
+    height: 90%;
+    width: 90%;
+}
+.card-5 img{
+    height: 100%;
+    width: 100%;
+}
+/* .card-6 */
+.card-6{
+    grid-area: card-6;
+    background: rgb(29, 29, 28);
+    padding: 8% 10%;
+}
+.location{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+   
+     color: #aaaaaa;
+
+}
+.location i{
+    padding: 8px ;
+    border-radius: 50%;
+    background: #d3f158;
+    font-weight: 800;
+    color: black;
+}
+.location p{
+    font-size: small;
+    
+    line-height: 18px;
+}
+.card-6 h2{
+    font-size: large;
+    font-weight: 400;
+    margin: 20px 0;
+    color: white;
+    line-height: 20px;
+}
+.card-6 .em{
+    font-size: small;
+}
+
+
+/* .card-7 */
+.card-7{
+    grid-area: card-7;
+    background: rgb(29, 29, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-7 div{
+     
+    height: 90%;
+    width: 90%;
+     
+}
+.card-7 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.card-8{
+    grid-area: card-8;
+   
+   background: #171717;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+} 
+.card-8 div{
+    height: 70%;
+    width: 90%;
+    background: darkmagenta;
+}
+.card-8 img{
+    height: 100%;
+    width: 100%;
+}
+/* CARD 9  */
+.card-9{
+    grid-area: card-9;
+    background: rgb(219, 226, 219);
+    color: black;
+    padding: 25px ;
+    display: flex;
+    justify-content: space-between;
+}
+.card-9 div{
+  
+    display: flex;
+    flex-direction: column;
+      justify-content: space-between;
+}
+.card-9 .c_left{
+    height: 100%;
+}
+.card-9 h3{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 45px;
+}
+.card-9 small{
+    display: block;
+}
+.card-9 h2{
+    font-size: 6rem;
+    font-weight: 400;
+   
+    line-height: 100px;
+}
+.card-9 button{
+    padding: 8px 15px;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    background:linear-gradient(to left,#5023a3,#5f49c0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.card-9 button:hover{
+    transition: .2s;
+    transform: translateY(-5px );
+    scale: 1.05;
+}
+.c_right{
+    position: relative;
+}
+.c_right p{
+    position: absolute;
+    top: 110px;
+    font-size: 2rem;
+    color: #a0c21a;
+}
+
+.card-10{
+    grid-area: card-10;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-10 div{
+    height: 70%;
+    width: 90%;
+    
+}
+.card-10 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
